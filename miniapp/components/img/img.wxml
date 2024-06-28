@@ -1,0 +1,21 @@
+<!--components/img/img.wxml-->
+<block wx:if="{{ autoPath }}">
+    <image animation="{{imgAni}}"
+           class="imgx {{clasx}}"
+           src="{{ cdn + src }}?v={{v}}"
+           mode="{{modex=='false' || !modex ? '' : modex}}"
+           style="{{stylx}}"
+           bind:load="onLoaded"
+           bind:tap="onTap">
+    </image>
+</block>
+<block wx:else>
+    <image animation="{{imgAni}}"
+           class="imgx {{clasx}}"
+           src="{{ isApi ? (apicdn + src) : src }}?v={{v}}"
+           mode="{{ modex ? modex : ''}}"
+           style="{{stylx}}"
+           bind:load="onLoaded"
+           bind:tap="onTap">
+    </image>
+</block>

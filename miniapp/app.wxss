@@ -1,0 +1,25 @@
+/**app.wxss**/
+@import '/common/css/base.wxss';
+
+/* ------- 20:9(刘海屏/水滴屏/打孔屏+物理系统按键/超全面屏等最新安卓手机、iphoneX/R/MAX注意要为最底下的SYSTEMBAR留出安全区域) -------*/
+.css { }
+
+/*-------- 19:9（刘海屏/水滴屏/打孔屏+虚拟系统按键安卓手机）-------*/
+@media screen and (width: 360px) and (min-height: 720px) and (max-height: 750px), screen and (width: 393px) and (min-height: 795px) and (max-height: 815px), screen and (width: 412px) and (min-height: 835px) and (max-height: 855px) {
+    .css { }
+}
+
+/*-------- 18:9（全面屏安卓手机）-------*/
+@media screen and (width: 360px) and (min-height: 660px) and (max-height: 719px), screen and (width: 393px) and (min-height: 730px) and (max-height: 794px), screen and (width: 412px) and (min-height: 750px) and (max-height: 834px) {
+    .css { }
+}
+
+/* ------- 16:9(标准屏安卓手机、iphone5/6/7/8) -------*/
+@media screen and (width: 360px) and (min-height: 640px) and (max-height: 659px), screen and (width: 393px) and (min-height: 695px) and (max-height: 729px), screen and (width: 412px) and (min-height: 732px) and (max-height: 749px), screen and (width: 320px), screen and (width: 375px) and (min-height: 600px) and (max-height: 667px), screen and (width: 414px) and (min-height: 670px) and (max-height: 736px) {
+    .css { }
+}
+
+/*-------- 15:9（标准屏+虚拟系统按键安卓手机（华为P9））-------*/
+@media screen and (width: 360px) and (min-height: 520px) and (max-height: 639px) {
+    .css { }
+}

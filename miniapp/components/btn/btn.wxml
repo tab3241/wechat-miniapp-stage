@@ -1,0 +1,15 @@
+<!--components/btn/btn.wxml-->
+<view class="comp_btn {{clasx}}">
+    <image wx:if="{{src != ''}}" class="imgholder" src="{{cdn}}/{{src}}" />
+    <!-- 打开设置 -->
+    <button wx:if="{{type == 'openSetting'}}" class="btn {{src != '' ? 'hide' : ''}}" open-type="{{type}}" bindopensetting="onBindEvent"><text>{{text}}</text></button>
+    <!-- 用户授权 -->
+    <button wx:elif="{{type == 'getUserInfo'}}" class="btn {{src != '' ? 'hide' : ''}}" open-type="{{type}}" bindgetuserinfo="onBindEvent"><text>{{text}}</text></button>
+    <!-- 分享 -->
+    <button wx:elif="{{type == 'share'}}" class="btn {{src != '' ? 'hide' : ''}}" open-type="{{type}}" bindgetuserinfo="onBindEvent"><text>{{text}}</text></button>
+    <!-- 打开客服消息 -->
+    <button wx:elif="{{type == 'contact'}}" class="btn {{src != '' ? 'hide' : ''}}" open-type="{{type}}" bindcontact="onBindEvent"><text>{{text}}</text></button>
+    <!-- 获取手机号码 -->
+    <button wx:elif="{{type == 'getPhoneNumber'}}" class="btn {{src != '' ? 'hide' : ''}}" open-type="{{type}}" bindgetphonenumber="onBindEvent"><text>{{text}}</text></button>
+    <button wx:else class="btn {{src != '' ? 'hide' : ''}}" bind:tap="onBindEvent"><text>{{text}}</text></button>
+</view>

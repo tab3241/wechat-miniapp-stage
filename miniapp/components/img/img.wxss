@@ -1,0 +1,2 @@
+/* components/img/img.wxss */
+.imgx { display: block; }

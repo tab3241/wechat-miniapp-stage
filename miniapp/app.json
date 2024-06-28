@@ -1,0 +1,29 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/lucky/lucky",
+        "pages/draw/draw",
+        "pages/webp/webp",
+        "pages/request/index"
+    ],
+    "usingComponents": {
+        "pageCore": "components/pageCore/pageCore",
+        "btn": "components/btn/btn",
+        "img": "components/img/img",
+        "pack": "components/pack/pack"
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "app.json默认标题请修改",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "sitemapLocation": "sitemap.json",
+    "plugins": {
+        "myPlugin": {
+            "version": "1.0.4",
+            "provider": "wx3f2a904342263e2e"
+        }
+    }
+}

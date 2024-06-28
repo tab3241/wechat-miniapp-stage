@@ -1,0 +1,19 @@
+/* components/btn/btn.wxss */
+
+.comp_btn>.imgholder, .comp_btn>.btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.comp_btn>.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comp_btn>.hide {
+  opacity: 0;
+}
